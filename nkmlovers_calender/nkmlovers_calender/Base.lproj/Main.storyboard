@@ -1,5 +1,5 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="14F2009" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
@@ -23,17 +23,23 @@
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kOn-yi-BAZ">
                                         <rect key="frame" x="37" y="43" width="31" height="30"/>
                                         <state key="normal" title="Prev"/>
+                                        <connections>
+                                            <action selector="tappedHeaderPrevBtn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="hkI-nZ-E7X"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Lur-Xe-GsB">
+                                        <rect key="frame" x="340" y="42" width="35" height="31"/>
+                                        <state key="normal" title="Next"/>
+                                        <connections>
+                                            <action selector="tappedHeaderNextBtn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="6RZ-FK-EQ2"/>
+                                        </connections>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="top" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="2017年1月" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="63j-oq-fXe">
-                                        <rect key="frame" x="166" y="47" width="79" height="21"/>
+                                        <rect key="frame" x="155" y="47" width="104" height="21"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Lur-Xe-GsB">
-                                        <rect key="frame" x="340" y="42" width="35" height="31"/>
-                                        <state key="normal" title="Next"/>
-                                    </button>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </view>
@@ -64,8 +70,6 @@
                     <connections>
                         <outlet property="calenderCollectionView" destination="lcz-Hs-fAM" id="JPf-62-hlA"/>
                         <outlet property="calenderHeaderView" destination="7Ab-KM-CJr" id="enN-B0-2JK"/>
-                        <outlet property="headerNextBtn" destination="Lur-Xe-GsB" id="99e-2X-sDh"/>
-                        <outlet property="headerPrevBtn" destination="kOn-yi-BAZ" id="ro8-cA-FdQ"/>
                         <outlet property="headerTitle" destination="63j-oq-fXe" id="muS-4W-4Ae"/>
                     </connections>
                 </viewController>
