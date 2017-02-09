@@ -8,6 +8,10 @@
 
 import UIKit
 
+
+var todoItem = [String]()
+
+
 class page2ViewController: UIViewController, UITableViewDataSource {
 
     
@@ -22,18 +26,21 @@ class page2ViewController: UIViewController, UITableViewDataSource {
     
     
     override func viewDidLoad() {
-            super.viewDidLoad()
-            listTableView.dataSource = self
+        super.viewDidLoad()
+        listTableView.dataSource = self
+        
         
         if NSUserDefaults.standardUserDefaults().objectForKey("todoList") != nil {
             items = NSUserDefaults.standardUserDefaults().objectForKey("todoList") as! [String]
         }
         
-
-        }
+        
+        
+        
+    }
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-      let cell = tableView.dequeueReusableCellWithIdentifier("listItem") as! ItemTableViewCell
+        let cell = tableView.dequeueReusableCellWithIdentifier("listItem") as! ItemTableViewCell
         cell.itemLabel.text = items[indexPath.row]
         
         let cellSelectedBgView = UIView()
@@ -42,18 +49,18 @@ class page2ViewController: UIViewController, UITableViewDataSource {
         
         
         return cell
-       
+        
     }
     
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return items.count
-        }
+    }
     
     func alert() {
         let alert = UIAlertController(title: "", message: "", preferredStyle: .Alert)
         alert.addTextFieldWithConfigurationHandler {
             (textfield) in
-            textfield.placeholder = "Enter your item name"
+            textfield.placeholder = "入力しよう"
         }
         
         let add = UIAlertAction(title: "Add", style: .Default) {
@@ -63,15 +70,20 @@ class page2ViewController: UIViewController, UITableViewDataSource {
             self.items.append(textfield.text!)
             self.listTableView.reloadData()
             
-            }
-    
+            todoItem.append(textfield.text!)
+            
+            NSUserDefaults.standardUserDefaults().setObject(todoItem, forKey: "todoList")
+            
+            
+        }
+        
         let cancel =  UIAlertAction(title: "Cancel", style: .Cancel) {
-        (alert) in
+            (alert) in
             print("Hi")
             
-            }
-            alert.addAction(add)
-            alert.addAction(cancel)
+        }
+        alert.addAction(add)
+        alert.addAction(cancel)
         
         presentViewController(alert, animated: true, completion: nil)
         
@@ -81,16 +93,16 @@ class page2ViewController: UIViewController, UITableViewDataSource {
         items.removeAtIndex(indexPath.row)
         tableView.deleteRowsAtIndexPaths([indexPath], withRowAnimation: .Automatic)
     }
-        
-        override func didReceiveMemoryWarning() {
-            super.didReceiveMemoryWarning()
-            // Dispose of any resources that can be recreated.
-        }
-        
-        
+    
+    override func didReceiveMemoryWarning() {
+        super.didReceiveMemoryWarning()
+        // Dispose of any resources that can be recreated.
+    }
+    
+    
 }
 
 
-    
-    
+
+
  
