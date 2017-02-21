@@ -10,11 +10,11 @@ import UIKit
 
 class ViewController: UIViewController {
 
-    @IBAction func gotoPage2(sender: AnyObject) {
+    @IBAction func gotoPage2(_ sender: AnyObject) {
         
-        let nextVC = self.storyboard?.instantiateViewControllerWithIdentifier("page2")
-        nextVC?.modalTransitionStyle = .CrossDissolve
-        presentViewController(nextVC!, animated: true, completion: nil)
+        let nextVC = self.storyboard?.instantiateViewController(withIdentifier: "page2")
+        nextVC?.modalTransitionStyle = .crossDissolve
+        present(nextVC!, animated: true, completion: nil)
     }
     override func viewDidLoad() {
         super.viewDidLoad()

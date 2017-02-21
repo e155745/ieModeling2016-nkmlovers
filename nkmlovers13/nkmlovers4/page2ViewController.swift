@@ -19,7 +19,7 @@ class page2ViewController: UIViewController, UITableViewDataSource {
     
    
     @IBOutlet weak var listTableView: UITableView!
-    @IBAction func addItem(sender: AnyObject) {
+    @IBAction func addItem(_ sender: AnyObject) {
         alert()
     }
     
@@ -30,8 +30,8 @@ class page2ViewController: UIViewController, UITableViewDataSource {
         listTableView.dataSource = self
         
         
-        if NSUserDefaults.standardUserDefaults().objectForKey("todoList") != nil {
-            items = NSUserDefaults.standardUserDefaults().objectForKey("todoList") as! [String]
+        if UserDefaults.standard.object(forKey: "todoList") != nil {
+            items = UserDefaults.standard.object(forKey: "todoList") as! [String]
         }
         
         
@@ -39,12 +39,12 @@ class page2ViewController: UIViewController, UITableViewDataSource {
         
     }
     
-    func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCellWithIdentifier("listItem") as! ItemTableViewCell
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "listItem") as! ItemTableViewCell
         cell.itemLabel.text = items[indexPath.row]
         
         let cellSelectedBgView = UIView()
-        cellSelectedBgView.backgroundColor = UIColor.clearColor()
+        cellSelectedBgView.backgroundColor = UIColor.clear
         cell.selectedBackgroundView = cellSelectedBgView
         
         
@@ -52,32 +52,32 @@ class page2ViewController: UIViewController, UITableViewDataSource {
         
     }
     
-    func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return items.count
     }
     
     func alert() {
-        let alert = UIAlertController(title: "", message: "", preferredStyle: .Alert)
-        alert.addTextFieldWithConfigurationHandler {
+        let alert = UIAlertController(title: "", message: "", preferredStyle: .alert)
+        alert.addTextField {
             (textfield) in
             textfield.placeholder = "入力しよう"
         }
         
-        let add = UIAlertAction(title: "Add", style: .Default) {
+        let add = UIAlertAction(title: "Add", style: .default) {
             
             (action) in
-            let textfield = alert.textFields![0] as! UITextField
+            let textfield = alert.textFields![0] 
             self.items.append(textfield.text!)
             self.listTableView.reloadData()
             
             todoItem.append(textfield.text!)
             
-            NSUserDefaults.standardUserDefaults().setObject(todoItem, forKey: "todoList")
+            UserDefaults.standard.set(todoItem, forKey: "todoList")
             
             
         }
         
-        let cancel =  UIAlertAction(title: "Cancel", style: .Cancel) {
+        let cancel =  UIAlertAction(title: "Cancel", style: .cancel) {
             (alert) in
             print("Hi")
             
@@ -85,13 +85,13 @@ class page2ViewController: UIViewController, UITableViewDataSource {
         alert.addAction(add)
         alert.addAction(cancel)
         
-        presentViewController(alert, animated: true, completion: nil)
+        present(alert, animated: true, completion: nil)
         
     }
     
-    func tableView(tableView: UITableView, commitEditingStyle editingStyle: UITableViewCellEditingStyle, forRowAtIndexPath indexPath: NSIndexPath) {
-        items.removeAtIndex(indexPath.row)
-        tableView.deleteRowsAtIndexPaths([indexPath], withRowAnimation: .Automatic)
+    func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath) {
+        items.remove(at: indexPath.row)
+        tableView.deleteRows(at: [indexPath], with: .automatic)
     }
     
     override func didReceiveMemoryWarning() {

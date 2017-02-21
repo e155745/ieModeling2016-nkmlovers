@@ -1,0 +1,507 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "nkmlovers4/calederViewController.swift"
+            timestampString = "508055964.280952"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "21"
+            endingLineNumber = "21"
+            landmarkName = "calederViewController"
+            landmarkType = "3">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "nkmlovers4/calenderViewController.swift"
+            timestampString = "508057865.288288"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "30"
+            endingLineNumber = "30"
+            landmarkName = "calederViewController"
+            landmarkType = "3">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "nkmlovers4.calederViewController.headerPrevBtn.setter : weak Swift.ImplicitlyUnwrappedOptional&lt;__ObjC.UIButton&gt;"
+                  moduleName = "nkmlovers4"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/e155701/Desktop/ieModeling2016-nkmlovers-master/nkmlovers10%202/nkmlovers4/calenderViewController.swift"
+                  timestampString = "508057866.316071"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "16">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "nkmlovers4.calederViewController.headerPrevBtn.materializeForSet : weak Swift.ImplicitlyUnwrappedOptional&lt;__ObjC.UIButton&gt;"
+                  moduleName = "nkmlovers4"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/e155701/Desktop/ieModeling2016-nkmlovers-master/nkmlovers10%202/nkmlovers4/calenderViewController.swift"
+                  timestampString = "508057866.316308"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "16">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "nkmlovers4.calederViewController.init (nkmlovers4.calederViewController.Type)(nibName : Swift.Optional&lt;Swift.String&gt;, bundle : Swift.Optional&lt;__ObjC.NSBundle&gt;) -&gt; nkmlovers4.calederViewController"
+                  moduleName = "nkmlovers4"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/e155701/Desktop/ieModeling2016-nkmlovers-master/nkmlovers10%202/nkmlovers4/calenderViewController.swift"
+                  timestampString = "508057866.316668"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "30"
+                  endingLineNumber = "30"
+                  offsetFromSymbolStart = "640">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "nkmlovers4.calederViewController.init (nkmlovers4.calederViewController.Type)(coder : __ObjC.NSCoder) -&gt; Swift.Optional&lt;nkmlovers4.calederViewController&gt;"
+                  moduleName = "nkmlovers4"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/e155701/Desktop/ieModeling2016-nkmlovers-master/nkmlovers10%202/nkmlovers4/calenderViewController.swift"
+                  timestampString = "508057866.316874"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "30"
+                  endingLineNumber = "30"
+                  offsetFromSymbolStart = "529">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "nkmlovers4/calenderViewController.swift"
+            timestampString = "508057865.288288"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "31"
+            endingLineNumber = "31"
+            landmarkName = "calederViewController"
+            landmarkType = "3">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "nkmlovers4.calederViewController.headerNextBtn.getter : weak Swift.ImplicitlyUnwrappedOptional&lt;__ObjC.UIButton&gt;"
+                  moduleName = "nkmlovers4"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/e155701/Desktop/ieModeling2016-nkmlovers-master/nkmlovers10%202/nkmlovers4/calenderViewController.swift"
+                  timestampString = "508057866.812402"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "12">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "nkmlovers4.calederViewController.headerNextBtn.materializeForSet : weak Swift.ImplicitlyUnwrappedOptional&lt;__ObjC.UIButton&gt;"
+                  moduleName = "nkmlovers4"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/e155701/Desktop/ieModeling2016-nkmlovers-master/nkmlovers10%202/nkmlovers4/calenderViewController.swift"
+                  timestampString = "508057866.815203"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "16">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "nkmlovers4.calederViewController.init (nkmlovers4.calederViewController.Type)(nibName : Swift.Optional&lt;Swift.String&gt;, bundle : Swift.Optional&lt;__ObjC.NSBundle&gt;) -&gt; nkmlovers4.calederViewController"
+                  moduleName = "nkmlovers4"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/e155701/Desktop/ieModeling2016-nkmlovers-master/nkmlovers10%202/nkmlovers4/calenderViewController.swift"
+                  timestampString = "508057866.816383"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "31"
+                  endingLineNumber = "31"
+                  offsetFromSymbolStart = "692">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "nkmlovers4.calederViewController.init (nkmlovers4.calederViewController.Type)(coder : __ObjC.NSCoder) -&gt; Swift.Optional&lt;nkmlovers4.calederViewController&gt;"
+                  moduleName = "nkmlovers4"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/e155701/Desktop/ieModeling2016-nkmlovers-master/nkmlovers10%202/nkmlovers4/calenderViewController.swift"
+                  timestampString = "508057866.816642"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "31"
+                  endingLineNumber = "31"
+                  offsetFromSymbolStart = "575">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "nkmlovers4/calenderViewController.swift"
+            timestampString = "508057865.288288"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "34"
+            endingLineNumber = "34"
+            landmarkName = "calederViewController"
+            landmarkType = "3">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "nkmlovers4.calederViewController.calenderCollectionView.getter : weak Swift.ImplicitlyUnwrappedOptional&lt;__ObjC.UICollectionView&gt;"
+                  moduleName = "nkmlovers4"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/e155701/Desktop/ieModeling2016-nkmlovers-master/nkmlovers10%202/nkmlovers4/calenderViewController.swift"
+                  timestampString = "508057866.820964"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "12">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "nkmlovers4.calederViewController.calenderCollectionView.setter : weak Swift.ImplicitlyUnwrappedOptional&lt;__ObjC.UICollectionView&gt;"
+                  moduleName = "nkmlovers4"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/e155701/Desktop/ieModeling2016-nkmlovers-master/nkmlovers10%202/nkmlovers4/calenderViewController.swift"
+                  timestampString = "508057866.821312"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "16">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "nkmlovers4.calederViewController.init (nkmlovers4.calederViewController.Type)(nibName : Swift.Optional&lt;Swift.String&gt;, bundle : Swift.Optional&lt;__ObjC.NSBundle&gt;) -&gt; nkmlovers4.calederViewController"
+                  moduleName = "nkmlovers4"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/e155701/Desktop/ieModeling2016-nkmlovers-master/nkmlovers10%202/nkmlovers4/calenderViewController.swift"
+                  timestampString = "508057866.821938"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "34"
+                  endingLineNumber = "34"
+                  offsetFromSymbolStart = "869">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "nkmlovers4.calederViewController.init (nkmlovers4.calederViewController.Type)(coder : __ObjC.NSCoder) -&gt; Swift.Optional&lt;nkmlovers4.calederViewController&gt;"
+                  moduleName = "nkmlovers4"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/e155701/Desktop/ieModeling2016-nkmlovers-master/nkmlovers10%202/nkmlovers4/calenderViewController.swift"
+                  timestampString = "508057866.822161"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "34"
+                  endingLineNumber = "34"
+                  offsetFromSymbolStart = "737">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "nkmlovers4/calenderViewController.swift"
+            timestampString = "508056886.005676"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "21"
+            endingLineNumber = "21"
+            landmarkName = "calederViewController"
+            landmarkType = "3">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "nkmlovers4.calederViewController.__deallocating_deinit"
+                  moduleName = "nkmlovers4"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/e155701/Desktop/ieModeling2016-nkmlovers-master/nkmlovers10%202/nkmlovers4/calenderViewController.swift"
+                  timestampString = "508057866.827957"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "12">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "nkmlovers4.calederViewController.init (nkmlovers4.calederViewController.Type)(nibName : Swift.Optional&lt;Swift.String&gt;, bundle : Swift.Optional&lt;__ObjC.NSBundle&gt;) -&gt; nkmlovers4.calederViewController"
+                  moduleName = "nkmlovers4"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/e155701/Desktop/ieModeling2016-nkmlovers-master/nkmlovers10%202/nkmlovers4/calenderViewController.swift"
+                  timestampString = "508057866.828253"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "23"
+                  endingLineNumber = "23"
+                  offsetFromSymbolStart = "57">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "nkmlovers4.calederViewController.init (nkmlovers4.calederViewController.Type)(coder : __ObjC.NSCoder) -&gt; Swift.Optional&lt;nkmlovers4.calederViewController&gt;"
+                  moduleName = "nkmlovers4"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/e155701/Desktop/ieModeling2016-nkmlovers-master/nkmlovers10%202/nkmlovers4/calenderViewController.swift"
+                  timestampString = "508057866.828445"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "23"
+                  endingLineNumber = "23"
+                  offsetFromSymbolStart = "19">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "nkmlovers4/calenderViewController.swift"
+            timestampString = "508057072.070249"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "32"
+            endingLineNumber = "32"
+            landmarkName = "calederViewController"
+            landmarkType = "3">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "nkmlovers4.calederViewController.headerTitle.getter : weak Swift.ImplicitlyUnwrappedOptional&lt;__ObjC.UILabel&gt;"
+                  moduleName = "nkmlovers4"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/e155701/Desktop/ieModeling2016-nkmlovers-master/nkmlovers10%202/nkmlovers4/calenderViewController.swift"
+                  timestampString = "508057866.829238"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "12">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "nkmlovers4.calederViewController.headerTitle.setter : weak Swift.ImplicitlyUnwrappedOptional&lt;__ObjC.UILabel&gt;"
+                  moduleName = "nkmlovers4"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/e155701/Desktop/ieModeling2016-nkmlovers-master/nkmlovers10%202/nkmlovers4/calenderViewController.swift"
+                  timestampString = "508057866.829535"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "16">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "nkmlovers4.calederViewController.headerTitle.materializeForSet : weak Swift.ImplicitlyUnwrappedOptional&lt;__ObjC.UILabel&gt;"
+                  moduleName = "nkmlovers4"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/e155701/Desktop/ieModeling2016-nkmlovers-master/nkmlovers10%202/nkmlovers4/calenderViewController.swift"
+                  timestampString = "508057866.829748"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "16">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "nkmlovers4.calederViewController.init (nkmlovers4.calederViewController.Type)(nibName : Swift.Optional&lt;Swift.String&gt;, bundle : Swift.Optional&lt;__ObjC.NSBundle&gt;) -&gt; nkmlovers4.calederViewController"
+                  moduleName = "nkmlovers4"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/e155701/Desktop/ieModeling2016-nkmlovers-master/nkmlovers10%202/nkmlovers4/calenderViewController.swift"
+                  timestampString = "508057866.829982"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "32"
+                  endingLineNumber = "32"
+                  offsetFromSymbolStart = "751">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "nkmlovers4/calenderViewController.swift"
+            timestampString = "508057073.128206"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "33"
+            endingLineNumber = "33"
+            landmarkName = "calederViewController"
+            landmarkType = "3">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "nkmlovers4.calederViewController.calenderHeaderView.getter : weak Swift.ImplicitlyUnwrappedOptional&lt;__ObjC.UIView&gt;"
+                  moduleName = "nkmlovers4"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/e155701/Desktop/ieModeling2016-nkmlovers-master/nkmlovers10%202/nkmlovers4/calenderViewController.swift"
+                  timestampString = "508057866.831826"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "12">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "nkmlovers4.calederViewController.calenderHeaderView.setter : weak Swift.ImplicitlyUnwrappedOptional&lt;__ObjC.UIView&gt;"
+                  moduleName = "nkmlovers4"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/e155701/Desktop/ieModeling2016-nkmlovers-master/nkmlovers10%202/nkmlovers4/calenderViewController.swift"
+                  timestampString = "508057866.832113"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "16">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "nkmlovers4.calederViewController.calenderHeaderView.materializeForSet : weak Swift.ImplicitlyUnwrappedOptional&lt;__ObjC.UIView&gt;"
+                  moduleName = "nkmlovers4"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/e155701/Desktop/ieModeling2016-nkmlovers-master/nkmlovers10%202/nkmlovers4/calenderViewController.swift"
+                  timestampString = "508057866.832281"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "16">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "nkmlovers4.calederViewController.init (nkmlovers4.calederViewController.Type)(nibName : Swift.Optional&lt;Swift.String&gt;, bundle : Swift.Optional&lt;__ObjC.NSBundle&gt;) -&gt; nkmlovers4.calederViewController"
+                  moduleName = "nkmlovers4"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/e155701/Desktop/ieModeling2016-nkmlovers-master/nkmlovers10%202/nkmlovers4/calenderViewController.swift"
+                  timestampString = "508057866.832478"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "33"
+                  endingLineNumber = "33"
+                  offsetFromSymbolStart = "810">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "nkmlovers4.calederViewController.init (nkmlovers4.calederViewController.Type)(coder : __ObjC.NSCoder) -&gt; Swift.Optional&lt;nkmlovers4.calederViewController&gt;"
+                  moduleName = "nkmlovers4"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/e155701/Desktop/ieModeling2016-nkmlovers-master/nkmlovers10%202/nkmlovers4/calenderViewController.swift"
+                  timestampString = "508057866.832722"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "33"
+                  endingLineNumber = "33"
+                  offsetFromSymbolStart = "681">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "nkmlovers4/calenderViewController.swift"
+            timestampString = "508057865.288288"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "54"
+            endingLineNumber = "54"
+            landmarkName = "calederViewController"
+            landmarkType = "3">
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>
