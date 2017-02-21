@@ -27,7 +27,7 @@ class page3ViewController: UIViewController, UITextFieldDelegate {
     }
 
     
-    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+    func textFieldShouldReturn(textField: UITextField) -> Bool {
         self.view.endEditing(true)
         return false
     }
@@ -38,7 +38,7 @@ class page3ViewController: UIViewController, UITextFieldDelegate {
     }
     
 
-    @IBAction func resultbutton(_ sender: UIButton) {
+    @IBAction func resultbutton(sender: UIButton) {
         let x1 = Int(bar1.text!)
         let x2 = Int(bar2.text!)
         let x3 = Int(bar3.text!)

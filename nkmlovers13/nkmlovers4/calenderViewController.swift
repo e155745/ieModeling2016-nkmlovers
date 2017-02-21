@@ -23,8 +23,8 @@ class calederViewController: UIViewController,UICollectionViewDataSource,UIColle
     let dateManager = DateManager()
     let daysPerWeek: Int = 7
     let cellMargin: CGFloat = 2.0
-    var selectedDate = Date()
-    var today: Date!
+    var selectedDate = NSDate()
+    var today: NSDate!
     let weekArray = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"]
 
     @IBOutlet weak var headerPrevBtn: UIButton!
@@ -40,7 +40,7 @@ class calederViewController: UIViewController,UICollectionViewDataSource,UIColle
         super.viewDidLoad()
         calenderCollectionView.delegate = self
         calenderCollectionView.dataSource = self
-        calenderCollectionView.backgroundColor = UIColor.white
+        calenderCollectionView.backgroundColor = UIColor.whiteColor()
         // Do any additional setup after loading the view, typically from a nib.
         
         headerTitle.text = changeHeaderTitle(selectedDate)
@@ -52,12 +52,12 @@ class calederViewController: UIViewController,UICollectionViewDataSource,UIColle
         // Dispose of any resources that can be recreated.
     }
     //1
-    func numberOfSections(in collectionView: UICollectionView) -> Int {
+    func numberOfSectionsInCollectionView(collectionView: UICollectionView) -> Int {
         return 2
     }
     
     //2
-    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+    func collectionView(collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         // Section毎にCellの総数を変える.
         if section == 0 {
             return 7
@@ -67,8 +67,8 @@ class calederViewController: UIViewController,UICollectionViewDataSource,UIColle
     }
     
     //3
-    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "cell", for: indexPath) as! CalendarCell
+    func collectionView(collectionView: UICollectionView, cellForItemAtIndexPath indexPath: NSIndexPath) -> UICollectionViewCell {
+        let cell = collectionView.dequeueReusableCellWithReuseIdentifier("cell", forIndexPath: indexPath) as! CalendarCell
         
         //テキストカラー
         if (indexPath.row % 7 == 0) {
@@ -76,7 +76,7 @@ class calederViewController: UIViewController,UICollectionViewDataSource,UIColle
         } else if (indexPath.row % 7 == 6) {
             cell.textLabel.textColor = UIColor.lightBlue()
         } else {
-            cell.textLabel.textColor = UIColor.gray
+            cell.textLabel.textColor = UIColor.grayColor()
         }
         //テキスト配置
         if indexPath.section == 0 {
@@ -90,39 +90,39 @@ class calederViewController: UIViewController,UICollectionViewDataSource,UIColle
     }
     
     //セルのサイズを設定
-    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+    func collectionView(collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAtIndexPath indexPath: NSIndexPath) -> CGSize {
         let numberOfMargin: CGFloat = 8.0
         let width: CGFloat = (collectionView.frame.size.width - cellMargin * numberOfMargin) / CGFloat(daysPerWeek)
         let height: CGFloat = width * 1.0
-        return CGSize(width: width, height: height)
+        return CGSizeMake(width, height)
         
     }
     
     //セルの垂直方向のマージンを設定
-    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat {
+    func collectionView(collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAtIndex section: Int) -> CGFloat {
         return cellMargin
     }
     
     //セルの水平方向のマージンを設定
-    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumInteritemSpacingForSectionAt section: Int) -> CGFloat {
+    func collectionView(collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumInteritemSpacingForSectionAtIndex section: Int) -> CGFloat {
         return cellMargin
     }
     
     //headerの月を変更
-    func changeHeaderTitle(_ date: Date) -> String {
-        let formatter: DateFormatter = DateFormatter()
+    func changeHeaderTitle(date: NSDate) -> String {
+        let formatter: NSDateFormatter = NSDateFormatter()
         formatter.dateFormat = "yyyy年M月"
-        let selectMonth = formatter.string(from: date)
+        let selectMonth = formatter.stringFromDate(date)
         return selectMonth
     }
     
-    @IBAction func tappedHeaderPrevBtn(_ sender: UIButton) {
+    @IBAction func tappedHeaderPrevBtn(sender: UIButton) {
         selectedDate = dateManager.prevMonth(selectedDate)
         calenderCollectionView.reloadData()
         headerTitle.text = changeHeaderTitle(selectedDate)
     }
     
-    @IBAction func tappedHeaderNextBtn(_ sender: UIButton) {
+    @IBAction func tappedHeaderNextBtn(sender: UIButton) {
         selectedDate = dateManager.nextMonth(selectedDate)
         calenderCollectionView.reloadData()
         headerTitle.text = changeHeaderTitle(selectedDate)

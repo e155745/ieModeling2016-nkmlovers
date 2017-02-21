@@ -8,10 +8,6 @@
 
 import UIKit
 
-
-var todoItem = [String]()
-
-
 class page2ViewController: UIViewController, UITableViewDataSource {
 
     
@@ -19,90 +15,82 @@ class page2ViewController: UIViewController, UITableViewDataSource {
     
    
     @IBOutlet weak var listTableView: UITableView!
-    @IBAction func addItem(_ sender: AnyObject) {
+    @IBAction func addItem(sender: AnyObject) {
         alert()
     }
     
     
     
     override func viewDidLoad() {
-        super.viewDidLoad()
-        listTableView.dataSource = self
+            super.viewDidLoad()
+            listTableView.dataSource = self
         
-        
-        if UserDefaults.standard.object(forKey: "todoList") != nil {
-            items = UserDefaults.standard.object(forKey: "todoList") as! [String]
+        if NSUserDefaults.standardUserDefaults().objectForKey("todoList") != nil {
+            items = NSUserDefaults.standardUserDefaults().objectForKey("todoList") as! [String]
         }
         
-        
-        
-        
-    }
+
+        }
     
-    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "listItem") as! ItemTableViewCell
+    func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
+      let cell = tableView.dequeueReusableCellWithIdentifier("listItem") as! ItemTableViewCell
         cell.itemLabel.text = items[indexPath.row]
         
         let cellSelectedBgView = UIView()
-        cellSelectedBgView.backgroundColor = UIColor.clear
+        cellSelectedBgView.backgroundColor = UIColor.clearColor()
         cell.selectedBackgroundView = cellSelectedBgView
         
         
         return cell
-        
+       
     }
     
-    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+    func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return items.count
-    }
+        }
     
     func alert() {
-        let alert = UIAlertController(title: "", message: "", preferredStyle: .alert)
-        alert.addTextField {
+        let alert = UIAlertController(title: "", message: "", preferredStyle: .Alert)
+        alert.addTextFieldWithConfigurationHandler {
             (textfield) in
-            textfield.placeholder = "入力しよう"
+            textfield.placeholder = "Enter your item name"
         }
         
-        let add = UIAlertAction(title: "Add", style: .default) {
+        let add = UIAlertAction(title: "Add", style: .Default) {
             
             (action) in
-            let textfield = alert.textFields![0] 
+            let textfield = alert.textFields![0] as! UITextField
             self.items.append(textfield.text!)
             self.listTableView.reloadData()
             
-            todoItem.append(textfield.text!)
-            
-            UserDefaults.standard.set(todoItem, forKey: "todoList")
-            
-            
-        }
-        
-        let cancel =  UIAlertAction(title: "Cancel", style: .cancel) {
-            (alert) in
+            }
+    
+        let cancel =  UIAlertAction(title: "Cancel", style: .Cancel) {
+        (alert) in
             print("Hi")
             
+            }
+            alert.addAction(add)
+            alert.addAction(cancel)
+        
+        presentViewController(alert, animated: true, completion: nil)
+        
+    }
+    
+    func tableView(tableView: UITableView, commitEditingStyle editingStyle: UITableViewCellEditingStyle, forRowAtIndexPath indexPath: NSIndexPath) {
+        items.removeAtIndex(indexPath.row)
+        tableView.deleteRowsAtIndexPaths([indexPath], withRowAnimation: .Automatic)
+    }
+        
+        override func didReceiveMemoryWarning() {
+            super.didReceiveMemoryWarning()
+            // Dispose of any resources that can be recreated.
         }
-        alert.addAction(add)
-        alert.addAction(cancel)
         
-        present(alert, animated: true, completion: nil)
         
-    }
-    
-    func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath) {
-        items.remove(at: indexPath.row)
-        tableView.deleteRows(at: [indexPath], with: .automatic)
-    }
-    
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-    
-    
 }
 
 
-
-
+    
+    
  
