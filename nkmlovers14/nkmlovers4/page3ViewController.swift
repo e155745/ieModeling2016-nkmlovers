@@ -43,7 +43,8 @@ class page3ViewController: UIViewController, UITextFieldDelegate {
         let x2 = Int(bar2.text!)
         let x3 = Int(bar3.text!)
         
-        let y = x1! - x2! - x3!
+        let y = x1!
+            //x2! + x3!
         result.text = y.description
         
     }

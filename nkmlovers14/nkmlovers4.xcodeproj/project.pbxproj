@@ -211,16 +211,19 @@
 				TargetAttributes = {
 					79F59DB51DFFA77200C4352A = {
 						CreatedOnToolsVersion = 7.2.1;
-						DevelopmentTeam = ZW75LQK5FD;
+						DevelopmentTeam = XLZCL84U5C;
+						LastSwiftMigration = 0820;
 					};
 					79F59DC91DFFA77200C4352A = {
 						CreatedOnToolsVersion = 7.2.1;
 						DevelopmentTeam = ZW75LQK5FD;
+						LastSwiftMigration = 0820;
 						TestTargetID = 79F59DB51DFFA77200C4352A;
 					};
 					79F59DD41DFFA77200C4352A = {
 						CreatedOnToolsVersion = 7.2.1;
 						DevelopmentTeam = ZW75LQK5FD;
+						LastSwiftMigration = 0820;
 						TestTargetID = 79F59DB51DFFA77200C4352A;
 					};
 				};
@@ -426,10 +429,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = XLZCL84U5C;
 				INFOPLIST_FILE = nkmlovers4/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "Univ-of-the-Ryukyus.nkmlovers4";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 2;
 			};
 			name = Debug;
 		};
@@ -437,10 +444,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = XLZCL84U5C;
 				INFOPLIST_FILE = nkmlovers4/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "Univ-of-the-Ryukyus.nkmlovers4";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 2;
 			};
 			name = Release;
 		};
@@ -452,6 +463,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "Univ-of-the-Ryukyus.nkmlovers4Tests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/nkmlovers4.app/nkmlovers4";
 			};
 			name = Debug;
@@ -464,6 +476,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "Univ-of-the-Ryukyus.nkmlovers4Tests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/nkmlovers4.app/nkmlovers4";
 			};
 			name = Release;
@@ -475,6 +488,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "Univ-of-the-Ryukyus.nkmlovers4UITests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 				TEST_TARGET_NAME = nkmlovers4;
 				USES_XCTRUNNER = YES;
 			};
@@ -487,6 +501,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "Univ-of-the-Ryukyus.nkmlovers4UITests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 				TEST_TARGET_NAME = nkmlovers4;
 				USES_XCTRUNNER = YES;
 			};
